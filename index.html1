@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UFT-8"
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"
+
+  <title>Kaia's Beauty Parlour</title>
+
+</head>
+
+<body>
+
+  <header>
+
+    <h1>This is Kaia's Beauty Parlour</h1>
+
+  </header>
+
+
+  <main>
+
+    <p> We speacilize in selling hair pieces.</p>
+
+  </main>
+
+  <footer>
+
+    <p>&copy; 2026 Kaia's Beauty Parlour</p>
+
+  </footer>
+
+  </body>
+
+  </html>         
