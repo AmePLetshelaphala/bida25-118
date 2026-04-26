@@ -6,57 +6,94 @@ selector {
 
 body {
 
-    font-family: 'Poopins', sans-serif;
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
     color: #333;
-    background-color: #fff8f5;
+;   background-color:fdfaf8;
     margin: 0;
     padding: 0;
     line-height: 1.6;    
 }
 
-.triangle-navigation {
-
-    background: black;
-    color: white;
+/* 2. header and navigation */
+header {
+    background-color: #fff;
+    padding: 40px 20px;
     text-align: center;
-    padding: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+ 
+ h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    
 }
 
-/* Top row */
-.top {
+
+.nav-links {
+
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 40px;
+    list-style-type: none;
+    padding: 0;
+    
 }
 
-/* Middle row */
-.middle {
-    margin-bottom: 10px;
+
+.nav-links li a{
+
+    text-decoration: underline;
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    
 }
 
-.triangle-navigation a:hover {
-    color: gold;
+.nav-links li a:hover {
+    color: #bc8a5f;
+    text-decoration: underline;
+}
+
+/* 3. Min Content Area */
+.content-section {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px;
+    background: whitesmoke;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hero-text {
+
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 30x;
+    color: #fff8f5;
+    font-family: 'Times New Roman', Times, serif';
 
 }
 
-h1, h2{
-    font-family: 'Playfair Display', serif;
+h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 30px;   
 }
 
-p {
-    font-family: 'Poopins', sans-serif;
-}
-
-main {
-    padding: 20px;
-    max-width:800px ;
-    margin: 0 auto;
+p{
+    font-size: 1.1rem;
+    margin-bottom: 20px;
 }
 
 footer {
     background-color: #333; 
-    color: white; 
+    color: #777; 
     text-align: center; 
     padding: 10px; 
     position: fixed; 
