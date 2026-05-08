@@ -19,32 +19,78 @@
 
     <header>
 
-        <h1>Kaia's Beauty Parlour</h1>
+         <nav class="nav container">
+            <nav class="nav container">
+            <div class="navbar-section">
+      <div class="container">
+      <div class="navbar">
+      <div class="logo-area">
+        KAIA'S BEAUTY PARLOUR
+        <span>luxury hair pieces</span>
+      </div>
 
-        <h2>Feedback form</h2>
+            <nav class="nav-container">
 
-        <nav>
+                <div class="nav-row">
+                  <a href="index.html">Home</a>
+                  <a href="about.html">About</a>
+                  <a href="products.html">Products</a>
 
-            <nav class="triangle-nav">
+                </div>
+                <div class="nav-row indent">
 
-                <ul class="main-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="feedback.html">Feedback</a></li>
+                  <a href="contact.html">Contact</a>
+                  <a href="feedback.html">Feedback</a>
+            </div>
             
-        </ul>
+        </nav>
 
+    </header>
+
+    <main class="container">
+
+        <section class="hero-section">
+    <div class="hero-content">
+
+    <h1>We Value Your Feedback</h1>
+    <div class="hero-description">
+        <p>Your feedback would really be appreciated! Please fill out the form so that we can know how you feel about us</p>
     </div>
+    <form id="feedbackForm" action="https://formspree.io/f/mykopana" method="POST">    
+        <div class="feedback-form container">
 
-    <h2 class="hero-text">We Value Your Feedback</h2>
-        
-        <main>
+            <div class="input-group">
+                <label>Name</label> 
+            <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+            
+            <div class="input-group">
+                <label>Rating (1-5 stars)</label>
 
-            <p>This is our review page</p>
-            <p>Please fill out this form so that we can know how it was interacting with our websbite</p>
-            <p>Thank you!</p>
+                 <select name="rating" id="rating" required>
+          <option value="5">★★★★★ (5 - Amazing)</option>
+          <option value="4">★★★★☆ (4 - Great)</option>
+          <option value="3">★★★☆☆ (3 - Good)</option>
+          <option value="2">★★☆☆☆ (2 - Fair)</option>
+          <option value="1">★☆☆☆☆ (1 - Needs improvement)</option>
+          </select>
+
+          </div>
+
+          <div class="input-group">
+
+            <label>What do you have to say about us?</label>
+
+            <input type="text" name="improved" placeholder="Share your thoughts about our products...">
+          </div>
+
+          <div class="submit container">
+
+            <button type="submit" class="btn-gold submit-btn">Submit</button>
+
+            </div>
+            </form>    
+
 
         </main>
         
@@ -54,8 +100,14 @@
 
     </footer>
 
+    <div id="thankYouPopup" class="popup">
+        <div class="popup-content">
+            <h2>Thank You For Your Feedback!</h2>
+            <button id="closePopup">Close</button>
+        </div>
+    </div>
     
-    
+   <script src="script.js"></script>
     
 </body>
 
