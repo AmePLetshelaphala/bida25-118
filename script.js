@@ -55,3 +55,24 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 });
+
+const backToTopButton = document.getElementById('back-to-top');
+
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 300) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+});
+
+backToTopButton.addEventListener('click', function() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
