@@ -77,3 +77,7 @@ backToTopButton.addEventListener('click', function() {
 }); 
 
 
+function toggleMenu() {
+    const nav = document.getElementById("nav-group");
+    nav.classList.toggle("active");
+}
