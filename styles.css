@@ -1,6 +1,3 @@
-/* ==========================================================================
-   1. GLOBAL RESETS & BODY BASE STYLING
-   ========================================================================== */
 * {
     margin: 0;
     padding: 0;
@@ -9,16 +6,13 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #FAF8F6; /* Soft ivory linen tint for main body area */
-    color: #4A3728;            /* Rich deep brown for comfortable text reading */
+    background-color: #FAF8F6; 
+    color: #4A3728;            
     overflow-x: hidden;
 }
 
-/* ==========================================================================
-   2. BEIGE HEADER STYLE (LOGO LEFT, STACKED PILLS RIGHT)
-   ========================================================================== */
 .site-header {
-    background-color: #E8D8C1; /* Your original classic beige branding tone */
+    background-color: #E8D8C1; 
     padding: 35px 0;
     border-bottom: 1px solid rgba(74, 55, 40, 0.1);
 }
@@ -28,11 +22,11 @@ body {
     margin: 0 auto;
     padding: 0 30px;
     display: flex;
-    justify-content: space-between; /* Keeps brand identity left, navigation right */
+    justify-content: space-between; 
     align-items: center;            
 }
 
-/* Logo & Brand Elements */
+
 .logo-area {
     display: flex;
     flex-direction: column;
@@ -42,7 +36,7 @@ body {
     font-family: 'Georgia', serif;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #4A3728;            /* Bold deep brown typography */
+    color: #4A3728;           
     letter-spacing: 2px;
     margin: 0;
 }
@@ -51,36 +45,35 @@ body {
     font-family: 'Georgia', serif;
     font-style: italic;
     font-size: 0.85rem;
-    color: #8C7662;            /* Elegant soft brown subtext */
+    color: #8C7662;            
     margin-top: 4px;
     letter-spacing: 1px;
 }
 
-/* Vertical Stacking Layout for White Navigation Pills */
+
 .stacked-nav-group {
     display: flex;
     flex-direction: column;
-    gap: 12px;                  /* Dynamic vertical layout spacing between rows */
-    align-items: flex-end;      /* Safely pushes rows flush to the right boundary */
+    gap: 12px;                  
+    align-items: flex-end;      
 }
 
 .nav-row-top, .nav-row-bottom {
     display: flex;
-    gap: 15px;                  /* Horizontal separation distance between individual capsules */
+    gap: 15px;                  
 }
 
-/* Stagger Offset to lock in your original scattered arrangement */
 .nav-row-bottom {
-    margin-right: 45px;         /* Offsets contact & feedback links safely leftward */
+    margin-right: 45px;         
 }
 
-/* Capsule-Shaped Link Mechanics */
+
 .nav-btn {
     text-decoration: none;
     color: #4A3728;             
-    background-color: #FFFFFF;  /* Distinct white background pill configuration */
+    background-color: #FFFFFF; 
     padding: 10px 24px;         
-    border-radius: 50px;        /* Smooth full circle capsule ends */
+    border-radius: 50px;        
     font-weight: 600;
     font-size: 0.95rem;
     box-shadow: 0 4px 10px rgba(74, 55, 40, 0.06); 
@@ -88,20 +81,17 @@ body {
     display: inline-block;
 }
 
-/* Selection / Hover Color Shift Interaction */
+
 .nav-btn.active, .nav-btn:hover {
-    background-color: #4A3728;  /* Drops white background for signature deep brown */
-    color: #FFFFFF;             /* Crisp bright reading clarity */
+    background-color: #4A3728;  
+    color: #FFFFFF;             
     transform: translateY(-2px);
     box-shadow: 0 6px 15px rgba(74, 55, 40, 0.15);
 }
 
-/* ==========================================================================
-   3. STRUCTURAL CENTERED FOOTER BAR (MATCHING BEIGE)
-   ========================================================================== */
 .site-footer {
     padding: 40px 0;
-    background-color: #E8D8C1; /* Seamlessly matches header framework tone */
+    background-color: #E8D8C1; 
     border-top: 1px solid rgba(74, 55, 40, 0.1);
 }
 
@@ -109,35 +99,30 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 30px;
-    text-align: center;         /* Guarantees copyright details sit dead-center */
+    text-align: center;         
 }
 
 .footer-container p {
     font-size: 0.9rem;
     font-weight: 500;
-    color: #4A3728;             /* Deep rich brown contrast typography */
+    color: #4A3728;             
     letter-spacing: 1px;
 }
 
-/* ==========================================================================
-   HOMEPAGE CONTENT LAYOUT (HERO SECTION)
-   ========================================================================== */
 .content-wrapper {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 90px 30px; /* Generous breathing room below the header */
+    padding: 90px 30px; 
 }
 
 .hero-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 80px; /* Creates the perfect modern separation between left and right panels */
+    gap: 80px; 
 }
 
-/* ==========================================================================
-   LEFT PANEL: TYPOGRAPHY & CALL TO ACTION
-   ========================================================================== */
+
 .hero-text-block {
     flex: 1.2;
     max-width: 580px;
@@ -147,7 +132,7 @@ body {
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 3px;
-    color: #8C7662; /* Soft muted brown accent */
+    color: #8C7662; 
     font-weight: 700;
     display: block;
     margin-bottom: 15px;
@@ -156,13 +141,12 @@ body {
 .hero-text-block h1 {
     font-family: 'Georgia', serif;
     font-size: 3.8rem;
-    color: #4A3728; /* Deep brown heading */
+    color: #4A3728; 
     margin-bottom: 20px;
     font-weight: 300;
     line-height: 1.2;
 }
 
-/* For italicizing specific words in the title, e.g., "Perfect Look" */
 .hero-text-block .serif-accent {
     font-style: italic;
     font-weight: 700;
@@ -172,7 +156,7 @@ body {
     font-size: 1.05rem;
     color: #8C7662;
     margin-bottom: 35px;
-    border-left: 3px solid #E8D8C1; /* Elegant vertical beige line decoration */
+    border-left: 3px solid #E8D8C1; 
     padding-left: 15px;
 }
 
@@ -193,17 +177,17 @@ body {
 .highlight {
     color: #4A3728;
     font-weight: bold;
-    text-decoration: underline; /* To highlight terms like "TRUST US." */
+    text-decoration: underline; 
 }
 
-/* Core Brand Button Style */
+
 .cta-btn {
     display: inline-block;
     text-decoration: none;
-    background-color: #4A3728; /* Solid deep brown button */
+    background-color: #4A3728; 
     color: #FFFFFF;
     padding: 15px 35px;
-    border-radius: 50px;       /* Capsule style matching the nav buttons */
+    border-radius: 50px;       
     font-weight: 600;
     text-transform: uppercase;
     font-size: 0.85rem;
@@ -213,14 +197,12 @@ body {
 }
 
 .cta-btn:hover {
-    background-color: #332419; /* Darkens slightly on hover */
+    background-color: #332419; 
     transform: translateY(-3px);
     box-shadow: 0 12px 25px rgba(74, 55, 40, 0.25);
 }
 
-/* ==========================================================================
-   RIGHT PANEL: EDITORIAL TESTIMONIAL CARD
-   ========================================================================== */
+
 .hero-feature-block {
     flex: 0.8;
 }
@@ -229,14 +211,14 @@ body {
     background-color: #FFFFFF;
     padding: 45px 35px;
     border-radius: 20px;
-    border-left: 4px solid #E8D8C1; /* Clean left border layout strip */
-    box-shadow: 0 20px 40px rgba(74, 55, 40, 0.03); /* Soft, unnoticeable elevation drop */
+    border-left: 4px solid #E8D8C1; 
+    box-shadow: 0 20px 40px rgba(74, 55, 40, 0.03); 
 }
 
 .quote-mark {
     font-family: 'Georgia', serif;
     font-size: 3.5rem;
-    color: rgba(232, 216, 193, 0.8); /* Faded beige quotation styling */
+    color: rgba(232, 216, 193, 0.8); 
     line-height: 0.1;
     display: block;
     margin-bottom: 10px;
@@ -259,11 +241,8 @@ body {
     font-weight: 600;
 }
 
-/* ==========================================================================
-   5. ABOUT PAGE SPECIFIC CONTENT STYLES
-   ========================================================================== */
 .about-section {
-    max-width: 800px; /* Restricts text width so it reads like a premium magazine article */
+    max-width: 800px; 
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -271,12 +250,12 @@ body {
 .about-text-container h2 {
     font-family: 'Georgia', serif;
     font-size: 3.2rem;
-    color: #4A3728; /* Deep brand brown */
+    color: #4A3728;
     margin-bottom: 30px;
     font-weight: 300;
 }
 
-/* Enhances your introductory sentence */
+
 .about-lead {
     font-size: 1.25rem;
     line-height: 1.8;
@@ -285,12 +264,12 @@ body {
     font-weight: 500;
 }
 
-/* Creates a clean structured layout layout for your middle paragraphs */
+
 .about-details-box {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    border-left: 3px solid #E8D8C1; /* Accent beige line down the side */
+    border-left: 3px solid #E8D8C1; 
     padding-left: 25px;
     margin-bottom: 40px;
 }
@@ -310,7 +289,7 @@ body {
     color: #555555;
 }
 
-/* Beautiful highlighted closing remark statement */
+
 .about-closing {
     font-family: 'Georgia', serif;
     font-style: italic;
@@ -320,9 +299,6 @@ body {
     font-weight: bold;
 }
 
-/* ==========================================================================
-   6. CONTACT PAGE CONTENT STYLES
-   ========================================================================== */
 .contact-section {
     width: 100%;
 }
@@ -346,7 +322,7 @@ body {
     color: #555555;
 }
 
-/* 3-Column Info Cards engine setup container box layout */
+
 .contact-grid {
     display: flex;
     gap: 30px;
@@ -364,7 +340,7 @@ body {
     overflow: hidden;
 }
 
-/* Decorative tiny line strip across the card tops */
+
 .card-accent-line {
     position: absolute;
     top: 0;
@@ -382,7 +358,7 @@ body {
     font-weight: 700;
 }
 
-/* Styling internal content rows inside info cards */
+
 .contact-card p {
     font-size: 1.05rem;
     line-height: 1.6;
@@ -391,7 +367,7 @@ body {
 
 .address-line {
     font-weight: 600;
-    color: #4A3728 !important;
+    color: #4A3728;
 }
 
 .address-city {
@@ -429,13 +405,10 @@ body {
 }
 
 .email-text {
-    font-size: 0.95rem; /* Wraps cleanly on standard screen scales */
+    font-size: 0.95rem; 
     word-break: break-all;
 }
 
-/* ==========================================================================
-   7. FEEDBACK PAGE CONTENT STYLES
-   ========================================================================== */
 .feedback-section {
     width: 100%;
     display: flex;
@@ -444,7 +417,7 @@ body {
 
 .feedback-container {
     width: 100%;
-    max-width: 650px; /* Nicely restricts form width for a clean look */
+    max-width: 650px; 
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -472,7 +445,7 @@ body {
     margin-bottom: 35px;
 }
 
-/* Input Fields Structure Setup Layout */
+
 .form-group {
     display: flex;
     flex-direction: column;
@@ -502,7 +475,7 @@ body {
     transition: all 0.3s ease;
 }
 
-/* Interactive Focus Border State */
+
 .form-group input:focus, 
 .form-group select:focus, 
 .form-group textarea:focus {
@@ -512,11 +485,10 @@ body {
     box-shadow: 0 0 0 4px rgba(232, 216, 193, 0.4);
 }
 
-/* Custom adjustments for browser drop-down styling overrides */
+
 .form-group select {
     cursor: pointer;
     appearance: none;
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%234A3728' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
     background-repeat: no-repeat;
     background-position: right 18px center;
     background-size: 14px;
@@ -527,11 +499,11 @@ body {
     resize: vertical;
 }
 
-/* Button Mechanics Setup overrides */
+
 .form-submit-btn, .form-close-btn {
     width: 100%;
     padding: 16px;
-    background-color: #4A3728; /* Signature premium deep brown button */
+    background-color: #4A3728; 
     color: #FFFFFF;
     border: none;
     border-radius: 50px;
@@ -550,9 +522,9 @@ body {
     box-shadow: 0 12px 25px rgba(74, 55, 40, 0.22);
 }
 
-/* Bottom Success Message Alert Block Layout styling adjustments */
+
 .success-card {
-    display: none; /* Hidden by default, shown on successful form submission */
+    display: none; 
     text-align: center;
     border-top: 4px solid #E8D8C1;
 }
@@ -578,9 +550,6 @@ body {
     color: #FFFFFF;
 }
 
-/* ==========================================================================
-   8. PRODUCTS SHOWROOM SHOWCASE LAYOUT (CSS GRID)
-   ========================================================================== */
 .products-header-block {
     max-width: 750px;
     margin-bottom: 50px;
@@ -600,7 +569,7 @@ body {
     color: #555555;
 }
 
-/* Category Dividers */
+
 .category-divider {
     width: 100%;
     border-bottom: 2px solid #E8D8C1;
@@ -615,7 +584,7 @@ body {
     font-weight: 600;
 }
 
-/* Response Grid Track Container */
+
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -623,7 +592,7 @@ body {
     width: 100%;
 }
 
-/* Individual Product Cards */
+
 .product-card {
     background-color: #FFFFFF;
     border-radius: 16px;
@@ -639,10 +608,10 @@ body {
     box-shadow: 0 18px 40px rgba(74, 55, 40, 0.08);
 }
 
-/* Cropping & Image Normalization */
+
 .product-image-container {
     width: 100%;
-    height: 280px; /* Forces all product images to have exact uniform height */
+    height: 280px; 
     overflow: hidden;
     background-color: #FAF8F6;
 }
@@ -650,15 +619,15 @@ body {
 .product-img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Crops cleanly to prevent weird horizontal stretching */
+    object-fit: cover; 
     transition: transform 0.5s ease;
 }
 
 .product-card:hover .product-img {
-    transform: scale(1.05); /* Soft premium zoom effect on hover */
+    transform: scale(1.05); 
 }
 
-/* Text Padding Frames */
+
 .product-info {
     padding: 25px;
     display: flex;
@@ -678,10 +647,9 @@ body {
     line-height: 1.5;
     color: #777777;
     margin-bottom: 15px;
-    flex-grow: 1; /* Keeps description boxes uniform */
+    flex-grow: 1;
 }
 
-/* Structured Spec Rows */
 .product-specs {
     display: flex;
     justify-content: space-between;
@@ -693,7 +661,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Bottom Action Matrix */
+
 .product-footer {
     display: flex;
     justify-content: space-between;
@@ -757,3 +725,181 @@ body {
 } 
 
 #back-to-top:hover { background-color: #d2a481; } 
+
+.menu-toggle {
+    display: none; 
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    padding: 0;
+}
+
+.menu-toggle .bar {
+    width: 100%;
+    height: 3px;
+    background-color: #4A3728; 
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 768px) {
+    
+    
+    .navbar-container {
+        flex-direction: row ;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+   
+    .menu-toggle {
+        display: flex;
+    }
+
+   
+    .stacked-nav-group {
+        display: none; 
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #E8D8C1;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(74, 55, 40, 0.1);
+        align-items: center ;
+        gap: 15px;
+        z-index: 999;
+    }
+
+   
+    .nav-row-top, .nav-row-bottom {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav-row-bottom {
+        margin-right: 0 ;
+    }
+
+    .nav-btn {
+        width: 80%; 
+        text-align: center;
+    }
+
+    
+    .stacked-nav-group.mobile-open {
+        display: flex;
+    }
+
+   
+    .menu-toggle.is-active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    .menu-toggle.is-active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .menu-toggle.is-active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}
+
+
+@media screen and (max-width: 992px) {
+    .hero-section {
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-text-block {
+        max-width: 100%;
+    }
+
+    .hero-tagline {
+        border-left: none;
+        border-top: 2px solid #E8D8C1;
+        border-bottom: 2px solid #E8D8C1;
+        padding: 10px 0;
+        margin: 0 auto 30px auto;
+        max-width: max-content;
+    }
+
+    .hero-feature-block {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .testimonial-card {
+        max-width: 100%;
+    }
+
+    .contact-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-wrapper {
+        padding: 40px 20px;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+
+    .stacked-nav-group {
+        align-items: center; 
+        width: 100%;
+    }
+
+    .nav-row-bottom {
+        margin-right: 0; 
+    }
+
+    .nav-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
+
+
+    .hero-text-block h1 {
+        font-size: 2.6rem;
+    }
+
+    .about-text-container h2,
+    .contact-header-block h2,
+    .products-header-block h2 {
+        font-size: 2.2rem;
+    }
+
+    .form-card {
+        padding: 35px 20px;
+    }
+
+    .form-card h2 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-row-top, .nav-row-bottom {
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+}
