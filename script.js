@@ -76,13 +76,11 @@ backToTopButton.addEventListener('click', function() {
 
 }); 
 
-const menuToggle = document.getElementById('menu-toggle');
-    const navGroup = document.getElementById('nav-group');
 
-    if (menuToggle && navGroup) {
-        menuToggle.addEventListener('click', function() {
-            // Toggles classes to flip drawer open state and animate the icon to an X
-            menuToggle.classList.toggle('is-active');
-            navGroup.classList.toggle('mobile-open');
-        });
-    }
+const hamburgerBtn = document.getElementById('hamburger-btn');
+const navGroup = document.getElementById('nav-group');
+
+hamburgerBtn.addEventListener('click', () => {
+    // Toggles the 'show-menu' class on and off when clicked
+    navGroup.classList.toggle('show-menu');
+});
