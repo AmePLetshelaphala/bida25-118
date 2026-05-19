@@ -1,122 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>About Kaia's Beauty Parlour</title>
-
+    <title>Feedback - Kaia's Beauty Parlour</title>
     <link rel="stylesheet" href="styles.css">
-
-
-
 </head>
-
 <body>
 
-    <header>
-
-         <nav class="nav container">
-            <nav class="nav container">
-            <div class="navbar-section">
-      <div class="container">
-      <div class="navbar">
-      <div class="logo-area">
-        KAIA'S BEAUTY PARLOUR
-        <span>luxury hair pieces</span>
-      </div>
-
-            <nav class="nav-container">
-
-                <div class="nav-row">
-                  <a href="index.html">Home</a>
-                  <a href="about.html">About</a>
-                  <a href="products.html">Products</a>
-
-                </div>
-                <div class="nav-row indent">
-
-                  <a href="contact.html">Contact</a>
-                  <a href="feedback.html">Feedback</a>
-
-    
+    <header class="site-header">
+        <div class="navbar-container">
+            <div class="logo-area">
+                <h1>KAIA'S BEAUTY PARLOUR</h1>
+                <span class="tagline">luxury hair pieces</span>
             </div>
 
-            <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-        </nav>
-
+            <nav class="stacked-nav-group">
+                <div class="nav-row-top">
+                    <a href="index.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="products.html" class="nav-btn">Products</a>
+                </div>
+                <div class="nav-row-bottom">
+                    <a href="contact.html" class="nav-btn">Contact</a>
+                    <a href="feedback.html" class="nav-btn active">Feedback</a> </div>
+            </nav>
+        </div>
     </header>
 
-    <main class="container">
+    <main class="content-wrapper">
+        <section class="feedback-section">
+            <div class="feedback-container">
+                
+                <div class="form-card" id="feedback-form-card">
+                    <span class="luxury-badge">Your Voice</span>
+                    <h2>We Value Your Feedback</h2>
+                    <p class="form-lead">Your feedback would really be appreciated! Please fill out the form so that we can know how you feel about us.</p>
+                    
+                    <form id="feedback-form" action="https://formspree.io/f/mykopana" method="POST">
+                        
+                        <div class="form-group">
+                            <label for="client-name">Name</label>
+                            <input type="text" id="client-name" name="name" placeholder="Enter Your Name" required>
+                        </div>
 
-        <section class="hero-section">
-    <div class="hero-content">
+                        <div class="form-group">
+                            <label for="client-rating">Rating (1-5 stars)</label>
+                            <select id="client-rating" name="rating">
+                                <option>★★★★★ (5 - Amazing)</option>
+                                <option>★★★★☆ (4 - Very Good)</option>
+                                <option>★★★☆☆ (3 - Good)</option>
+                                <option>★★☆☆☆ (2 - Fair)</option>
+                                <option>★☆☆☆☆ (1 - Poor)</option>
+                            </select>
+                        </div>
 
-    <h1>We Value Your Feedback</h1>
-    <div class="hero-description">
-        <p>Your feedback would really be appreciated! Please fill out the form so that we can know how you feel about us</p>
-    </div>
-    <form id="feedbackForm" action="https://formspree.io/f/mykopana" method="POST">    
-        <div class="feedback-form container">
+                        <div class="form-group">
+                            <label for="client-msg">What do you have to say about us?</label>
+                            <textarea id="client-msg" name="message" rows="5" placeholder="Share your thoughts about our hair pieces or services..." required></textarea>
+                        </div>
 
-            <div class="input-group">
-                <label>Name</label> 
-            <input type="text" name="name" placeholder="Enter Your Name">
+                        <button type="submit" class="form-submit-btn">Submit Feedback</button>
+                    </form>
+                </div>
+
+                <div class="success-card" id="feedback-success-card">
+                    <h3>Thank You For Your Feedback!</h3>
+                    <button type="button" class="form-close-btn" id="form-close-btn">Close</button>
+                </div>
+
             </div>
-            
-            <div class="input-group">
-                <label>Rating (1-5 stars)</label>
+        </section>
+    </main>
 
-                 <select name="rating" id="rating" required>
-          <option value="5">★★★★★ (5 - Amazing)</option>
-          <option value="4">★★★★☆ (4 - Great)</option>
-          <option value="3">★★★☆☆ (3 - Good)</option>
-          <option value="2">★★☆☆☆ (2 - Fair)</option>
-          <option value="1">★☆☆☆☆ (1 - Needs improvement)</option>
-          </select>
-
-          </div>
-
-          <div class="input-group">
-
-            <label>What do you have to say about us?</label>
-
-            <input type="text" name="improved" placeholder="Share your thoughts about our products...">
-          </div>
-
-          <div class="submit container">
-
-            <button type="submit" class="btn-gold submit-btn">Submit</button>
-
-            </div>
-            </form>    
-
-
-        </main>
-        
-         <footer>
-
-        <p>&copy; 2026 Kaia's Beauty Parlour. All rights reserved.</p>
-
-    </footer>
-
-    <div id="thankYouPopup" class="popup">
-        <div class="popup-content">
-            <h2>Thank You For Your Feedback!</h2>
-            <button id="closePopup">Close</button>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Kaia's Beauty Parlour. All rights reserved.</p>
         </div>
-    </div>
-    
-   <script src="script.js"></script>
-    
+    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>

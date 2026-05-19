@@ -1,263 +1,206 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Our Products</title>
-
-     <link rel="stylesheet" href="styles.css">
-
-    
-
+    <title>Products - Kaia's Beauty Parlour</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <header>
+    <header class="site-header">
+        <div class="navbar-container">
+            <div class="logo-area">
+                <h1>KAIA'S BEAUTY PARLOUR</h1>
+                <span class="tagline">luxury hair pieces</span>
+            </div>
 
-        <nav class="nav container">
-            <nav class="nav container">
-            <div class="navbar-section">
-      <div class="container">
-      <div class="navbar">
-      <div class="logo-area">
-        KAIA'S BEAUTY PARLOUR
-        <span>luxury hair pieces</span>
-      </div>
-
-       <nav class="nav-container">
-
-            <div class="nav-row">
-                  <a href="index.html">Home</a>
-                  <a href="about.html">About</a>
-                  <a href="products.html">Products</a>
-
+            <nav class="stacked-nav-group">
+                <div class="nav-row-top">
+                    <a href="index.html" class="nav-btn">Home</a>
+                    <a href="about.html" class="nav-btn">About</a>
+                    <a href="products.html" class="nav-btn active">Products</a> </div>
+                <div class="nav-row-bottom">
+                    <a href="contact.html" class="nav-btn">Contact</a>
+                    <a href="feedback.html" class="nav-btn">Feedback</a>
                 </div>
-                <div class="nav-row indent">
-
-                  <a href="contact.html">Contact</a>
-                  <a href="feedback.html">Feedback</a>
-                  
+            </nav>
         </div>
+    </header>
 
-        <button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+    <main class="content-wrapper">
+        <section class="products-section">
+            
+            <div class="products-header-block">
+                <span class="luxury-badge">The Showroom</span>
+                <h2>Our Collection</h2>
+                <p class="products-lead">Explore our collection and find the hair that completes your look.</p>
+            </div>
 
-    </nav>
+            <div class="category-divider">
+                <h3>Human Hair Collection</h3>
+            </div>
 
-</header>
-
-    <main class="collection-main">
-        <main class="container">
-        <section class="hero-section">
-            <div class="hero-content">
-            <h1>Our Collection</h1>
-             <div class="hero-description">
-                <p>Explore our collection and find the hair that completes your look.</p>
-             </div>
-
-    <section class="hair category-section container"> 
-        <div class="category-header">
-
-        <h2 class="category-title">Human Hair Collection</h2>
-
-        <div class=" category-underline"></div>
-
-        </div>
-            <div class="product-grid four-columns">
-
-                <div class="product-item">
-
-                    <div class="image-wrapper">
-
-        <img src="download.jpg" alt="Luxurious Silky Curled Hair">
-
+            <div class="products-grid">
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="download.jpg" alt="Silky Curly Frontal" class="product-img">
                     </div>
-
                     <div class="product-info">
-
-                        <h3 class="product name">Silky Curly Frontal</h3>
-
-                        <p class="product-description">Our silk, glazy and shiny curly black frontal. Length=24 inches. Color=Black. Price= P950</p>
-
+                        <h4>Silky Curly Frontal</h4>
+                        <p class="product-desc">Our silk, glazy and shiny curly black frontal.</p>
+                        <div class="product-specs">
+                            <span><strong>Length:</strong> 24 inches</span>
+                            <span><strong>Color:</strong> Black</span>
                         </div>
-
+                        <div class="product-footer">
+                            <span class="product-price">P950</span>
+                            <a href="contact.html" class="order-btn">Inquire</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="product-item">
-
-                    <div class="image-wrapper">
-
-                <img src="download (6).jpg" alt="Bright Straight Frontal">
-
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="download (6).jpg" alt="Bright Straight Frontal" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Bright Straight Frontal</h4>
+                        <p class="product-desc">A bright and vibrant straight frontal with a natural look.</p>
+                        <div class="product-specs">
+                            <span><strong>Length:</strong> 22 inches</span>
+                            <span><strong>Color:</strong> Brown</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">P850</span>
+                            <a href="contact.html" class="order-btn">Inquire</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="product-info">
-
-                    <h3 class="product-name">Bright Straight Frontal</h3>
-
-        <p class="product-description">A bright and vibrant straight frontal with a natural look. Length=22 inches. Color=Brown. Price= P850</p>
-
-        </div>
-
-        </div>
-
-        <div class="product-item">
-
-            <div class="image-wrapper">
-
-        <img src="download (1).jpg" alt="Short Bob Frontal">
-
-            </div>
-
-            <div class="product-info">
-
-        <h3 class="product-name">Short Bob Frontal</h3>
-
-        <p class="product-description">A luxurious,short and straight bob frontal. Length=12inches. Color=Black. Price= P600</p>
-
-        </div>
-
-        </div>
-
-        <div class="product-item">
-
-            <div class="image-wrapper">
-
-        <img src="curly bob.jpg" alt="A Bob Curly Frontal">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3 class="product-name">Bob Curly Frontal</h3>
-
-        <p class="product-description">A bob curly frontal with a natural shine. Length=14 inches. Color=Black. Price= P1,200</p>
-
-        </div>
-
-        </div>
-
-        </div>
-
-    </section>
-
-
-    <section class="hair category synthetic hair-section">
-
-        <div class="category-header container">
-
-        <h2 class="category-title">Synthetic Hair Collection</h2>
-
-        <div class="category-underline"></div>
-
-        </div>
-
-        <div class="product-grid four-columns container">
-
-            <div class="product-item">
-
-                <div class="image-wrapper">
-
-        <img src="straight black.jpg" alt="Silky Straight Frontal">
-
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="download (1).jpg" alt="Short Bob Frontal" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Short Bob Frontal</h4>
+                        <p class="product-desc">A luxurious, short and straight bob frontal.</p>
+                        <div class="product-specs">
+                            <span><strong>Length:</strong> 12 inches</span>
+                            <span><strong>Color:</strong> Black</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">P600</span>
+                            <a href="contact.html" class="order-btn">Inquire</a>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="product-info">
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="curly bob.jpg" alt="Bob Curly Frontal" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Bob Curly Frontal</h4>
+                        <p class="product-desc">A bob curly frontal with a natural shine.</p>
+                        <div class="product-specs">
+                            <span><strong>Length:</strong> 14 inches</span>
+                            <span><strong>Color:</strong> Black</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">P1,200</span>
+                            <a href="contact.html" class="order-btn">Inquire</a>
+                        </div>
+                    </div>
+                </div>
 
-                    <h3 class="product-name">Silky Straight Frontal</h3>
-
-        <p class="product-description">A silky, straight and shiny synthetic frontal. Length=24 inches. Color=Black. Price= P900</p>
-
-        </div>
-
-        </div>
-
-        <div class="product-item">
-
-            <div class="image-wrapper">
-
-        <img src="download (3).jpg" alt="A Bright Curly Frontal">
-
+            </div> <div class="category-divider">
+                <h3>Synthetic Hair Collection</h3>
             </div>
 
-            <div class="product-info">
+            <div class="products-grid">
+                
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="straight black.jpg" alt="Silky Straight Frontal" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Silky Straight Frontal</h4>
+                        <p class="product-desc">A silky, straight and shiny synthetic frontal.</p>
+                        <div class="product-specs">
+                            <span><strong>Length:</strong> 24 inches</span>
+                            <span><strong>Color:</strong> Black</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">P900</span>
+                            <a href="contact.html" class="order-btn">Inquire</a>
+                        </div>
+                    </div>
+                </div>
 
-                <h3 class="product-name">Bright Curly Frontal</h3
-                    >
-        <p class="product-description">A curly and look refreshing frontal. Length=22 inches. Color=Black. Price= P1,000</p>
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="download (3).jpg" alt="Bright Curly Frontal" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Bright Curly Frontal</h4>
+                        <p class="product-desc">A curly and refreshing frontal with beautiful bounce.</p>
+                        <div class="product-specs">
+                            <span><strong>Length:</strong> 22 inches</span>
+                            <span><strong>Color:</strong> Black</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">P1,000</span>
+                            <a href="contact.html" class="order-btn">Inquire</a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="download (2).jpg" alt="Layered Straight Frontal" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Layered Straight Frontal</h4>
+                        <p class="product-desc">A long and straight glazy frontal with pre-styled layers.</p>
+                        <div class="product-specs">
+                            <span><strong>Length:</strong> 12 inches</span>
+                            <span><strong>Color:</strong> Brown</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">P700</span>
+                            <a href="contact.html" class="order-btn">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image-container">
+                        <img src="download (5).jpg" alt="Black Curly Frontal" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h4>Black Curly Frontal</h4>
+                        <p class="product-desc">A curly frontal with a natural shine. Available as shown.</p>
+                        <div class="product-specs">
+                            <span><strong>Length:</strong> 12 inches</span>
+                            <span><strong>Color:</strong> Black</span>
+                        </div>
+                        <div class="product-footer">
+                            <span class="product-price">P450</span>
+                            <a href="contact.html" class="order-btn">Inquire</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Kaia's Beauty Parlour. All rights reserved.</p>
         </div>
-
-        </div>
-
-        <div class="product-item">
-
-            <div class="image-wrapper">
-
-        <img src="download (2).jpg" alt="Layered Straight Frontal">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3 class="product-name">Layered Straight Frontal</h3>
-
-        <p class="product-description">A long and straight glazy frontal. Length=12 inches. Color=Brown. Price= P700</p>
-
-        </div>
-
-        </div>
-
-        <div class="product-item">
-
-            <div class="image-wrapper">
-
-        <img src="download (5).jpg" alt="A collection of Synthetic hair">
-
-            </div>
-
-            <div class="product-info">
-
-                <h3 class="product-name"> Black Curly Frontal</h3>
-
-        <p class="product-description">A curly frontal with a natural shine. Length=12 inches. Color=Black. Price= P450</p>
-      
-            </div>
-
-        </div>
-
-        </div>
-
-    
-    </section>
-
-    <div class="worldwide-badge">
-
-        <p class="shipping-message">Hair is available as shown and we deliver worldwide</p>
-
-     </main>
-
-    </div>
-
-    <footer>
-
-        <p>&copy; 2026 Kaia's Beauty Parlour. All rights reserved.</p>
-
     </footer>
-
-    <button id="back-to-top" title="Go to top">&#8593;</button>
-
     <script src="script.js"></script>
-    
 </body>
-
 </html>

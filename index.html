@@ -1,76 +1,63 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Kaia's Beauty Parlour</title>
-
     <link rel="stylesheet" href="styles.css">
-
-
 </head>
-
 <body>
 
-    <header>
+    <header class="site-header">
+        <div class="navbar-container">
+            <div class="logo-area">
+                <h1>KAIA'S BEAUTY PARLOUR</h1>
+                <span class="tagline">luxury hair pieces</span>
+            </div>
 
-        <nav class="nav container">
-            <div class="navbar-section">
-      <div class="container">
-      <div class="navbar">
-      <div class="logo-area">
-        KAIA'S BEAUTY PARLOUR
-        <span>luxury hair pieces</span>
-      </div>
-
-        <nav class="nav-container">
-
-            <div class="nav-row">
-                  <a href="index.html">Home</a>
-                  <a href="about.html">About</a>
-                  <a href="products.html">Products</a>
-
-                </div>
-                <div class="nav-row indent">
-
-                  <a href="contact.html">Contact</a>
-                  <a href="feedback.html">Feedback</a>
-
-                </div>
-<button class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
+         <nav class="stacked-nav-group">
+            <div class="nav-row-top">
+                <a href="index.html" class="nav-btn active">Home</a>
+                <a href="about.html" class="nav-btn">About</a>
+                <a href="products.html" class="nav-btn">Products</a>
+            </div>
+            <div class="nav-row-bottom">
+                <a href="contact.html" class="nav-btn">Contact</a>
+                <a href="feedback.html" class="nav-btn">Feedback</a>
+            </div>
         </nav>
+    </div>
+</header>
 
-    </header>
+    <main class="content-wrapper">
+        <section class="hero-section">
+            <div class="hero-text-block">
+                <span class="luxury-badge">Premium Hair Collection</span>
+                <h1>Find Your <br><span class="serif-accent">Perfect Look</span></h1>
+                <div class="hero-tagline">Seamless Blend · Lasting Confidence</div>
+                
+                <div class="hero-description">
+                    <strong>READY TO FIND YOUR PERFECT LOOK?</strong>
+                    <p>At Kaia's Beauty Parlour, we create premium hair pieces that blend seamlessly with your personality and skin color. Whether it’s volume, length, or texture—<span class="highlight">TRUST US.</span></p>
+                </div>
+                
+                <a href="products.html" class="cta-btn">Explore Collection</a>
+            </div>
 
-    <main class="container">
- <section class="hero-section">
-    <div class="hero-content">
-      <h1>Find Your Perfect Look</h1>
-      <div class="hero-tagline"> Premium Hair Pieces · Seamless Blend · Lasting Confidence </div>
-      <div class="hero-description">
-        <strong>READY TO FIND YOUR PERFECT LOOK? THIS IS THE PLACE FOR YOU!</strong><br>
-        At Kaia's Beauty Parlor, we create premium hair pieces that blend seamlessly with your personality and skin color. Whether it’s volume, length or texture <span class="highlight">TRUST US.</span>
-      </div>
-
-
+            <div class="hero-feature-block">
+                <div class="testimonial-card">
+                    <span class="quote-mark">“</span>
+                    <p class="review-text">The quality of the lace and the texture blend is unmatched. It feels completely natural and gives me so much confidence.</p>
+                    <span class="reviewer-name">— Satisfied Client</span>
+                </div>
+            </div>
+        </section>
     </main>
 
-
-    <footer>
-
-        <p>&copy; 2026 Kaia's Beauty Parlour. All rights reserved.</p>
-
-    </footer> 
-
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2026 Kaia's Beauty Parlour. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
-
 </html>
