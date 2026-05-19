@@ -1,5 +1,5 @@
 console.log("JavaScript is connected!");
- 
+
 
 document.addEventListener('DOMContentLoaded', function() {
   console.log('JS loaded');
@@ -77,10 +77,3 @@ backToTopButton.addEventListener('click', function() {
 }); 
 
 
-const hamburgerBtn = document.getElementById('hamburger-btn');
-const navGroup = document.getElementById('nav-group');
-
-hamburgerBtn.addEventListener('click', () => {
-    // Toggles the 'show-menu' class on and off when clicked
-    navGroup.classList.toggle('show-menu');
-});
